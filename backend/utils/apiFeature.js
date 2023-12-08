@@ -16,5 +16,8 @@ class ApiFeatures {
     this.query = this.query.find({ ...keyword });
     return this;
   }
+  filter() {
+    const queryCopy = { ...this.queryStr };
+  }
 }
 module.exports = ApiFeatures;
