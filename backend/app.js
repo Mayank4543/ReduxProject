@@ -7,6 +7,6 @@ const user = require("./routes/userRoutes");
 
 app.use(errormidddleware);
 app.use("/api/v1", product);
-app.use("/api/v2", user);
+app.use("/api/v1", user);
 
 module.exports = app;
